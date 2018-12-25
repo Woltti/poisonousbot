@@ -95,6 +95,6 @@ pre {
         top: 0px;
     }
 }
-.music {
-display : none;
+#music {
+display:none;
 }
