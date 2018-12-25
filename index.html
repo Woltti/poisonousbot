@@ -12,19 +12,26 @@
 <script src="assets/main.html"></script>
 
 		
-        <link rel="shortcut icon" href="favicon.ico">
-		<script language="JavaScript">
-		<!-- 
-		function Scroll()
-		{
-		document.title = msg.substring(pos, msg.length) + space + msg.substring(0,pos);
-		pos++;
-		if (pos > msg.length) pos = 0;
-		window.setTimeout("Scroll()", speed);
-		}
-		Scroll();
-		-->
-		</script><title>/ Poisonous Bot /</title>
+<script type="text/javascript">
+                var msg  = document.title ="Edgy Title";
+                var speed = 150;
+                var endChar = " ";
+                var pos = 0;
+                
+                function moveTitle()
+                {
+                     var ml = msg.length;
+                        
+                    title = msg.substr(pos,ml) + endChar + msg.substr(0,pos);
+                  document.title = title;
+                    
+                  pos++;
+                  if (pos > ml) pos=0;
+                  window.setTimeout("moveTitle()",speed);
+                }
+            
+                moveTitle();
+            </script>
 </head>
 		
 		
